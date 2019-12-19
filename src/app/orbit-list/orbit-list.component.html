@@ -8,10 +8,10 @@
         <th>Launch Date</th>
     </tr>
     <tr *ngFor="let satellite of satellites">
-        <td>1 {{ satellite.name }}</td>
-        <td>2 {{ satellite.orbitType }}</td>
-        <td>3 {{ satellite.type }}</td>
-        <td>4 {{ satellite.operational }}</td>
-        <td>5 {{ satellite.launchDate }}</td>
+        <td>{{ satellite.name }}</td>
+        <td>{{ satellite.orbitType }}</td>
+        <td>{{ satellite.type }}</td>
+        <td>{{ satellite.operational }}</td>
+        <td>{{ satellite.launchDate }}</td>
     </tr>
 </table>
