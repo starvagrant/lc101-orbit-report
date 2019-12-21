@@ -46,7 +46,7 @@ export class AppComponent {
   update(): void {
     let satelliteCountSpans = document.getElementsByClassName('countSpan');
     for (let i=0; i<satelliteCountSpans.length; i++) {
-      satelliteCountSpans[i].click();
+      satelliteCountSpans[i].dispatchEvent(new Event('click'));
     }
   }
 }
