@@ -1,1 +1,10 @@
-<p>orbit-counts works!</p>
+<h3>Satellite Counts:</h3>
+<div (load)="updateCounts();" class="counts">
+   <div>Total: <span class="countSpan" (click)="updateCounts();"> {{ counts.total }}</span></div>
+   <div>Space Debris: <span class="countSpan" (click)="updateCounts();"> {{ counts.debris }}</span></div>
+   <div>Communication: <span class="countSpan" (click)="updateCounts();"> {{ counts.communication }}</span></div>
+   <div>Probe: <span class="countSpan" (click)="updateCounts();">{{ counts.probe }}</span></div>
+   <div>Positioning: <span class="countSpan" (click)="updateCounts();">{{ counts.positioning }} </span></div>
+   <div>Space Station: <span class="countSpan" (click)="updateCounts();">{{ counts.station }}</span></div>
+   <div>Telescope: <span class="countSpan" (click)="updateCounts();">{{ counts.telescope }}</span></div>
+</div>
