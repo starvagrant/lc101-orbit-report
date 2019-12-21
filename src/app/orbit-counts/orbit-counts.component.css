@@ -1,0 +1,8 @@
+.counts {
+    background: rgb(45, 84, 123);
+    color: #fff;
+    width: 200px;
+    line-height: 1.4em;
+    border-radius: 4px;
+    padding: 10px;
+}

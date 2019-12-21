@@ -10,7 +10,6 @@
     <tr *ngFor="let satellite of satellites" [class.zebra]="satellites.indexOf(satellite) % 2 === 0">
         <td>{{ satellite.name }}</td>
         <td [class.warning]=satellite.shouldShowWarning()>{{ satellite.type }}</td>
-        <td>{{ satellite.type }}</td>
         <td>{{ satellite.orbitType }}</td>
         <td>{{ satellite.operational }}</td>
         <td>{{ satellite.launchDate }}</td>

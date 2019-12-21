@@ -30,7 +30,6 @@ export class OrbitCountsComponent implements OnInit {
       if (this.satellites[i].type.toLowerCase() === 'space station') this.counts.station++;
       if (this.satellites[i].type.toLowerCase() === 'telescope') this.counts.telescope++;
     }
-    console.log(this.counts);
     return this.counts;
   }
 }
