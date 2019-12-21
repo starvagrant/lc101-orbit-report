@@ -41,5 +41,9 @@ export class AppComponent {
       }
     }
     this.displayList = matchingSatellites;
+    let satelliteCountSpans = document.getElementsByClassName('countSpan');
+    for (let i=0; i<satelliteCountSpans.length; i++) {
+      satelliteCountSpans[i].click();
+    }
   }
 }
